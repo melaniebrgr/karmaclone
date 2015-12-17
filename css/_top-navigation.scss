@@ -1,0 +1,30 @@
+.top-navigation {
+	height: 70px;
+	position: fixed;
+	width: 100%;
+}
+
+.top-navigation__container {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.top-navigation__logo {
+	height: 70px;
+	padding: 10px;
+}
+
+.top-navigation__nav {
+	li {
+		display: inline-block;
+		float: right;
+	}
+	&:after {
+		@include clearfix;
+	}
+}
+
+.top-navigation--theme {
+	background-color: $white;
+	border-bottom: 1px solid $grey;
+}

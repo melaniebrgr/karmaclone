@@ -352,3 +352,35 @@ table {
 td,
 th {
   padding: 0; }
+
+.top-navigation {
+  height: 70px;
+  position: fixed;
+  width: 100%; }
+
+.top-navigation__container {
+  margin: 0 auto;
+  width: 60%; }
+
+.top-navigation__logo {
+  height: 70px;
+  padding: 10px; }
+
+.top-navigation__nav li {
+  display: inline-block;
+  float: right; }
+.top-navigation__nav:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.top-navigation--theme {
+  background-color: #fff;
+  border-bottom: 1px solid #DDD; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=styles.css.map */
