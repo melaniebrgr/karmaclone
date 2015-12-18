@@ -1,5 +1,6 @@
 .top-navigation {
-	height: 70px;
+	font-size: 1rem;
+	height: em(70);
 	position: fixed;
 	width: 100%;
 }
@@ -7,24 +8,48 @@
 .top-navigation__container {
 	margin: 0 auto;
 	width: 60%;
+	padding: 0 em(15);
 }
 
 .top-navigation__logo {
-	height: 70px;
-	padding: 10px;
+	height: em(70);
+	padding: em(15) em(30) em(15) 0;
 }
 
 .top-navigation__nav {
+	float: right;
+	margin-top: em(25);
 	li {
 		display: inline-block;
-		float: right;
+		margin-left: em(25);
 	}
 	&:after {
 		@include clearfix;
 	}
 }
 
-.top-navigation--theme {
+.top-navigation--theme1 {
 	background-color: $white;
 	border-bottom: 1px solid $grey;
+}
+
+.top-navigation__nav--theme1 {
+	a {
+		color: $midGrey;
+		font-family: Roboto, sans-serif;
+		font-size: em(15.7);
+		font-weight: 300;
+		letter-spacing: em(0.5);
+	}
+	a:hover {
+		color: $darkGrey;
+		cursor: pointer;
+	}
+}
+
+.top-navigation__nav--is-active {
+	a {
+		color: $midDarkGrey;
+		font-weight: 500;
+	}
 }

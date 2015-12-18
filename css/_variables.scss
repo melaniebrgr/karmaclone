@@ -1,12 +1,23 @@
-// Colours
-$white: #fff;
+// Variables
+$white: #FFF;
 $grey: #DDD;
+$midGrey: #838994;
+$midDarkGrey: #4c5058;
+$darkGrey: #333333;
+$browser-context: 16px;
 
-// Utility
+// Mixins
 @mixin clearfix {
 	content: "."; 
 	visibility: hidden; 
 	display: block; 
 	height: 0; 
 	clear: both;
+}
+
+// Functions
+@function em($px, $context: $browser-context) {
+	@if ( unitless($px) ) { $px: $px * 1px; }
+	@if ( unitless($context) ) { $context: $context * 1px; }
+	@return $px / $context * 1em;
 }
