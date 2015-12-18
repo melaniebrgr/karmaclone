@@ -1,7 +1,7 @@
 // main hero image and call to action
 
 .intro-banner {
-	//font-size: 1rem;
+	font-size: 1rem;
 	height: em(735);
 	overflow: auto;
 	text-align: center;
@@ -12,12 +12,12 @@
 	h1 {
 		font-size: em(50);
     	font-weight: 300;
-    	margin-top: em(315px);
+    	margin: em(280, 50) 0 0 0; //note context for h1 is now 50px
 	}
 	h3 {
 		font-size: em(25);
     	font-weight: 100;
-    	margin-top: em(20);
+    	margin-top: em(20, 25);
 	}	
 }
 .intro-banner--theme1 {
