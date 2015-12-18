@@ -1,0 +1,19 @@
+// call to action button (located in hero image)
+
+.btn-cta {
+	display: inline-block;
+	//font-size: 1rem;
+	padding: 1em em(24);
+	width: em(155);
+}
+.btn-cta--theme1 {
+	background-color: $orange;
+	border-radius: 4px;
+	color: $white;
+	font-family: Roboto, sans-serif;
+	font-size: em(18);
+	font-weight: 300;
+	&:hover {
+		background-color: $orangeDark;
+	}
+}

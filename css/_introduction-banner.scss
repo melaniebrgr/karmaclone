@@ -1,0 +1,26 @@
+// main hero image and call to action
+
+.intro-banner {
+	//font-size: 1rem;
+	height: em(735);
+	overflow: auto;
+	text-align: center;
+	width: 100%;
+	h1, h3 {
+		color: white;
+	}
+	h1 {
+		font-size: em(50);
+    	font-weight: 300;
+    	margin-top: em(315px);
+	}
+	h3 {
+		font-size: em(25);
+    	font-weight: 100;
+    	margin-top: em(20);
+	}	
+}
+.intro-banner--theme1 {
+	background: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+	background-size: cover;
+}

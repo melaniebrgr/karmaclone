@@ -356,6 +356,9 @@ th {
 a {
   text-decoration: none; }
 
+button {
+  border: none; }
+
 .top-navigation {
   font-size: 1rem;
   height: 4.375em;
@@ -401,6 +404,41 @@ a {
 .top-navigation__nav--is-active a {
   color: #4c5058;
   font-weight: 500; }
+
+.intro-banner {
+  height: 45.9375em;
+  overflow: auto;
+  text-align: center;
+  width: 100%; }
+  .intro-banner h1, .intro-banner h3 {
+    color: white; }
+  .intro-banner h1 {
+    font-size: 3.125em;
+    font-weight: 300;
+    margin-top: 19.6875em; }
+  .intro-banner h3 {
+    font-size: 1.5625em;
+    font-weight: 100;
+    margin-top: 1.25em; }
+
+.intro-banner--theme1 {
+  background: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+  background-size: cover; }
+
+.btn-cta {
+  display: inline-block;
+  padding: 1em 1.5em;
+  width: 9.6875em; }
+
+.btn-cta--theme1 {
+  background-color: #f15a29;
+  border-radius: 4px;
+  color: #FFF;
+  font-family: Roboto, sans-serif;
+  font-size: 1.125em;
+  font-weight: 300; }
+  .btn-cta--theme1:hover {
+    background-color: #d9400e; }
 
 * {
   box-sizing: border-box; }
