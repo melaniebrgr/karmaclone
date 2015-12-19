@@ -1,0 +1,15 @@
+.footer-social {
+	@include centerBlock;
+	margin-bottom: em(150);
+	text-align: center;
+	hr {
+		margin: em(21) 0;
+	}
+}
+
+.footer-social--theme1 {
+	hr {
+		border: 0;
+		border-top: $grey 1px solid;
+	}
+}
