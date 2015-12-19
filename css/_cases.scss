@@ -1,13 +1,14 @@
-// cases for using karma
+// cases for using karma: thre side-by-side icon and label pairs
 
 .cases {
 	@include centerBlock;
 	font-size: 1rem;
-	height: em(445);
+	margin-top: em(115);
+	margin-bottom: em(115);
 	text-align: center;
 	h1 {
 		margin-bottom: em(50, 44);
-		padding-top: em(115, 44);
+		//padding-top: em(115, 44);
 	}
 	> ul { padding: 0; } 
 }
@@ -17,7 +18,7 @@ li[class^="cases__case-"] {
 	margin: 0;
 	padding: 0;
 	vertical-align: top;
-	width: (100% / 3);
+	width: (100% / 3); // number of icons
 	figure {
 		margin: 0;
 		img {

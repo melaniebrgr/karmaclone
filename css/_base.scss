@@ -2,7 +2,7 @@ html {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 }
-*, *:before, *:after {
+*, *::before, *::after {
 	box-sizing: inherit;
 }
 a {
@@ -11,7 +11,7 @@ a {
 button {
 	border: none;
 }
-h1, h3 {
+h1, h3, h4 {
 	font-family: Roboto, sans-serif;
 	font-weight: 300;
 }
@@ -20,4 +20,8 @@ h1 {
 }
 h3 {
 	font-size: em(25);
+}
+h4 {
+	font-size: 1rem;
+	font-weight: 400;
 }

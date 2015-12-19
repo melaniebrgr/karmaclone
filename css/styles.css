@@ -357,7 +357,7 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased; }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit; }
 
 a {
@@ -366,7 +366,7 @@ a {
 button {
   border: none; }
 
-h1, h3 {
+h1, h3, h4 {
   font-family: Roboto, sans-serif;
   font-weight: 300; }
 
@@ -376,11 +376,16 @@ h1 {
 h3 {
   font-size: 1.5625em; }
 
+h4 {
+  font-size: 1rem;
+  font-weight: 400; }
+
 .top-navigation {
   font-size: 1rem;
   height: 4.375em;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999; }
 
 .top-navigation__container {
   margin: 0 auto;
@@ -468,11 +473,11 @@ ul.top-navigation__nav {
   margin: 0 auto;
   width: 60%;
   font-size: 1rem;
-  height: 27.8125em;
+  margin-top: 7.1875em;
+  margin-bottom: 7.1875em;
   text-align: center; }
   .cases h1 {
-    margin-bottom: 1.1363636364em;
-    padding-top: 2.6136363636em; }
+    margin-bottom: 1.1363636364em; }
   .cases > ul {
     padding: 0; }
 
@@ -499,5 +504,39 @@ li[class^="cases__case-"] {
 .cases--theme1 figcaption {
   font-size: 1.5625em;
   font-weight: 400; }
+
+.footer-social {
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 9.375em;
+  text-align: center; }
+  .footer-social hr {
+    margin: 1.3125em 0; }
+
+.footer-social--theme1 hr {
+  border: 0;
+  border-top: #DDD 1px solid; }
+
+.social-icons {
+  padding: 0; }
+  .social-icons li {
+    display: inline-block;
+    padding: 0.3125em;
+    margin-left: 0.625em;
+    width: 5px;
+    height: 5px; }
+    .social-icons li:first-child {
+      margin-left: 0; }
+
+.social-icons--theme1 li {
+  border: #838994 1px solid;
+  border-radius: 50%; }
+.social-icons--theme1 li:hover {
+  cursor: pointer; }
+
+.copyright--theme1 {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #838994; }
 
 /*# sourceMappingURL=styles.css.map */
