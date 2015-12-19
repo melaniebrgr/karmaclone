@@ -1,0 +1,27 @@
+// cases for using karma
+
+.cases {
+	@include centerBlock;
+	font-size: 1rem;
+	height: em(445);
+	text-align: center;
+	h1 {
+		padding-top: em(126, 44);
+	}
+	> ul { padding: 0; } 
+}
+li[class^="cases__case-"] {
+	background: pink;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: (100% / 3);
+}
+
+.cases--theme1 {
+	h1 {
+		color: $black;
+		font-size: em(44);
+
+	}
+}

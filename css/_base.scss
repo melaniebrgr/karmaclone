@@ -1,6 +1,16 @@
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 a {
 	text-decoration: none;
 }
 button {
 	border: none;
+}
+h1, h3 {
+	font-weight: 300;
 }

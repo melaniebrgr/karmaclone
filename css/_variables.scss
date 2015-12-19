@@ -1,5 +1,6 @@
 // Variables
 $white: #FFF;
+$black: black;
 
 $orange: #f15a29;
 $orangeDark: #d9400e;
@@ -18,6 +19,11 @@ $browser-context: 16px;
 	display: block; 
 	height: 0; 
 	clear: both;
+}
+
+@mixin centerBlock {
+	margin: 0 auto;
+	width: 60%;
 }
 
 // Functions

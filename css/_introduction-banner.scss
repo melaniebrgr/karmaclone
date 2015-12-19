@@ -6,21 +6,25 @@
 	overflow: auto;
 	text-align: center;
 	width: 100%;
-	h1, h3 {
-		color: white;
-	}
 	h1 {
-		font-size: em(50);
-    	font-weight: 300;
     	margin: em(280, 50) 0 0 0; //note context for h1 is now 50px
 	}
 	h3 {
-		font-size: em(25);
-    	font-weight: 100;
     	margin-top: em(20, 25);
 	}	
 }
 .intro-banner--theme1 {
 	background: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+	background-position: center bottom;
+    background-repeat: no-repeat;
 	background-size: cover;
+	h1, h3 {
+		color: white;
+	}
+	h1 {
+		font-size: em(50);
+	}
+	h3 {
+		font-size: em(25);
+	}	
 }

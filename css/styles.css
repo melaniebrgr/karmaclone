@@ -353,11 +353,21 @@ td,
 th {
   padding: 0; }
 
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 a {
   text-decoration: none; }
 
 button {
   border: none; }
+
+h1, h3 {
+  font-weight: 300; }
 
 .top-navigation {
   font-size: 1rem;
@@ -395,8 +405,9 @@ ul.top-navigation__nav {
   color: #838994;
   font-family: Roboto, sans-serif;
   font-size: 0.98125em;
-  font-weight: 300;
-  letter-spacing: 0.03125em; }
+  letter-spacing: 0.03em;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
 .top-navigation__nav--theme1 a:hover {
   color: #333333;
   cursor: pointer; }
@@ -411,20 +422,22 @@ ul.top-navigation__nav {
   overflow: auto;
   text-align: center;
   width: 100%; }
-  .intro-banner h1, .intro-banner h3 {
-    color: white; }
   .intro-banner h1 {
-    font-size: 3.125em;
-    font-weight: 300;
     margin: 5.6em 0 0 0; }
   .intro-banner h3 {
-    font-size: 1.5625em;
-    font-weight: 100;
     margin-top: 0.8em; }
 
 .intro-banner--theme1 {
   background: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
   background-size: cover; }
+  .intro-banner--theme1 h1, .intro-banner--theme1 h3 {
+    color: white; }
+  .intro-banner--theme1 h1 {
+    font-size: 3.125em; }
+  .intro-banner--theme1 h3 {
+    font-size: 1.5625em; }
 
 .btn-cta {
   display: inline-block;
@@ -442,7 +455,26 @@ ul.top-navigation__nav {
   .btn-cta--theme1:hover {
     background-color: #d9400e; }
 
-* {
-  box-sizing: border-box; }
+.cases {
+  margin: 0 auto;
+  width: 60%;
+  font-size: 1rem;
+  height: 27.8125em;
+  text-align: center; }
+  .cases h1 {
+    padding-top: 2.8636363636em; }
+  .cases > ul {
+    padding: 0; }
+
+li[class^="cases__case-"] {
+  background: pink;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 33.3333333333%; }
+
+.cases--theme1 h1 {
+  color: black;
+  font-size: 2.75em; }
 
 /*# sourceMappingURL=styles.css.map */
