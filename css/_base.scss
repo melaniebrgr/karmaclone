@@ -12,5 +12,12 @@ button {
 	border: none;
 }
 h1, h3 {
+	font-family: Roboto, sans-serif;
 	font-weight: 300;
+}
+h1 {
+	font-size: em(50);
+}
+h3 {
+	font-size: em(25);
 }

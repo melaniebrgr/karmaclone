@@ -1,7 +1,6 @@
 // call to action button (located in hero image)
 
 .btn-cta {
-	display: inline-block;
 	font-size: 1rem;
 	padding: 1em em(24);
 	width: em(155);
@@ -13,7 +12,9 @@
 	font-family: Roboto, sans-serif;
 	font-size: em(18);
 	font-weight: 300;
+	transition: background-color 0.1s ease;
 	&:hover {
 		background-color: $orangeDark;
+		cursor: pointer;
 	}
 }

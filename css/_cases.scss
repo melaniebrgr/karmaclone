@@ -6,22 +6,40 @@
 	height: em(445);
 	text-align: center;
 	h1 {
-		padding-top: em(126, 44);
+		margin-bottom: em(50, 44);
+		padding-top: em(115, 44);
 	}
 	> ul { padding: 0; } 
 }
+
 li[class^="cases__case-"] {
-	background: pink;
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	vertical-align: top;
 	width: (100% / 3);
+	figure {
+		margin: 0;
+		img {
+			display: block;
+			padding: 0 em(80);
+			vertical-align: top;
+			width: 100%;
+		}
+		figcaption { 
+			margin-top: em(40, 25);
+			width: 100%;
+		}
+	}
 }
 
 .cases--theme1 {
 	h1 {
 		color: $black;
 		font-size: em(44);
-
+	}
+	figcaption {
+		font-size: em(25);
+		font-weight: 400;
 	}
 }

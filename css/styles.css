@@ -367,7 +367,14 @@ button {
   border: none; }
 
 h1, h3 {
+  font-family: Roboto, sans-serif;
   font-weight: 300; }
+
+h1 {
+  font-size: 3.125em; }
+
+h3 {
+  font-size: 1.5625em; }
 
 .top-navigation {
   font-size: 1rem;
@@ -406,8 +413,8 @@ ul.top-navigation__nav {
   font-family: Roboto, sans-serif;
   font-size: 0.98125em;
   letter-spacing: 0.03em;
-  -webkit-transition: color 0.15s ease;
-  transition: color 0.15s ease; }
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease; }
 .top-navigation__nav--theme1 a:hover {
   color: #333333;
   cursor: pointer; }
@@ -428,7 +435,7 @@ ul.top-navigation__nav {
     margin-top: 0.8em; }
 
 .intro-banner--theme1 {
-  background: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+  background: url(../assets/karma-cover.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -440,7 +447,6 @@ ul.top-navigation__nav {
     font-size: 1.5625em; }
 
 .btn-cta {
-  display: inline-block;
   font-size: 1rem;
   padding: 1em 1.5em;
   width: 9.6875em; }
@@ -451,9 +457,12 @@ ul.top-navigation__nav {
   color: #FFF;
   font-family: Roboto, sans-serif;
   font-size: 1.125em;
-  font-weight: 300; }
+  font-weight: 300;
+  -webkit-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease; }
   .btn-cta--theme1:hover {
-    background-color: #d9400e; }
+    background-color: #d9400e;
+    cursor: pointer; }
 
 .cases {
   margin: 0 auto;
@@ -462,19 +471,33 @@ ul.top-navigation__nav {
   height: 27.8125em;
   text-align: center; }
   .cases h1 {
-    padding-top: 2.8636363636em; }
+    margin-bottom: 1.1363636364em;
+    padding-top: 2.6136363636em; }
   .cases > ul {
     padding: 0; }
 
 li[class^="cases__case-"] {
-  background: pink;
   display: inline-block;
   margin: 0;
   padding: 0;
+  vertical-align: top;
   width: 33.3333333333%; }
+  li[class^="cases__case-"] figure {
+    margin: 0; }
+    li[class^="cases__case-"] figure img {
+      display: block;
+      padding: 0 5em;
+      vertical-align: top;
+      width: 100%; }
+    li[class^="cases__case-"] figure figcaption {
+      margin-top: 1.6em;
+      width: 100%; }
 
 .cases--theme1 h1 {
   color: black;
   font-size: 2.75em; }
+.cases--theme1 figcaption {
+  font-size: 1.5625em;
+  font-weight: 400; }
 
 /*# sourceMappingURL=styles.css.map */
