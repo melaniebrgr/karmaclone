@@ -414,12 +414,12 @@ ul.top-navigation__nav {
   border-bottom: 1px solid #DDD; }
 
 .top-navigation__nav--theme1 a {
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
   color: #838994;
   font-family: Roboto, sans-serif;
   font-size: 0.98125em;
-  letter-spacing: 0.03em;
-  -webkit-transition: color 0.1s ease;
-  transition: color 0.1s ease; }
+  letter-spacing: 0.03em; }
 .top-navigation__nav--theme1 a:hover {
   color: #333333;
   cursor: pointer; }
@@ -457,16 +457,16 @@ ul.top-navigation__nav {
   width: 9.6875em; }
 
 .btn-cta--theme1 {
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
   background-color: #f15a29;
   border-radius: 4px;
   color: #FFF;
   font-family: Roboto, sans-serif;
   font-size: 1.125em;
-  font-weight: 300;
-  -webkit-transition: background-color 0.1s ease;
-  transition: background-color 0.1s ease; }
+  font-weight: 300; }
   .btn-cta--theme1:hover {
-    background-color: #d9400e;
+    background: #d9400e;
     cursor: pointer; }
 
 .cases {
@@ -521,18 +521,27 @@ li[class^="cases__case-"] {
   padding: 0; }
   .social-icons li {
     display: inline-block;
-    padding: 0.3125em;
-    margin-left: 0.625em;
-    width: 5px;
-    height: 5px; }
+    height: 2.5em;
+    padding: 0.7em;
+    margin-left: 0.75em;
+    width: 2.5em; }
     .social-icons li:first-child {
       margin-left: 0; }
 
 .social-icons--theme1 li {
-  border: #838994 1px solid;
+  -webkit-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+  border: #DDD 1px solid;
   border-radius: 50%; }
 .social-icons--theme1 li:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  background: #DDD; }
+.social-icons--theme1 .fa-twitter {
+  color: #55acee; }
+.social-icons--theme1 .fa-facebook {
+  color: #4c66a4; }
+.social-icons--theme1 .fa-instagram {
+  color: #3f729b; }
 
 .copyright--theme1 {
   font-size: 0.9em;

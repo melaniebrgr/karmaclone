@@ -37,11 +37,11 @@ ul.top-navigation__nav {
 
 .top-navigation__nav--theme1 {
 	a {
+		@include transition(color);
 		color: $midGrey;
 		font-family: Roboto, sans-serif;
 		font-size: em(15.7);
 		letter-spacing: 0.03em;
-		transition: color 0.1s ease;
 	}
 	a:hover {
 		color: $darkGrey;

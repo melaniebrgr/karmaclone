@@ -1,11 +1,12 @@
 .social-icons {
+	$size: 40;
 	padding: 0;
 	li {
 		display: inline-block;
-		padding: em(5);
-		margin-left: em(10);
-		width: 5px;
-		height: 5px;
+		height: em($size);
+		padding: em((($size - 16) / 2) - 0.8); //size of container - width of fa icon / 2 - 0.8 empirically determined
+		margin-left: em(12);
+		width: em($size);
 		&:first-child {
 			margin-left: 0;
 		}
@@ -14,10 +15,21 @@
 
 .social-icons--theme1 {
 	li {
-		border: $midGrey 1px solid;
+		@include transition(background);
+		border: $grey 1px solid;
 		border-radius: 50%;
 	}
 	li:hover {
-		cursor: pointer
+		cursor: pointer;
+		background: $grey;
+	}
+	.fa-twitter {
+		color: #55acee;
+	}
+	.fa-facebook {
+		color: #4c66a4;
+	}
+	.fa-instagram {
+		color: #3f729b;
 	}
 }

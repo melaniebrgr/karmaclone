@@ -26,6 +26,10 @@ $browser-context: 16px;
 	width: 60%;
 }
 
+@mixin transition($property) {
+	transition: $property 0.1s ease;
+}
+
 // Functions
 @function em($px, $context: $browser-context) {
 	@if ( unitless($px) ) { $px: $px * 1px; }
